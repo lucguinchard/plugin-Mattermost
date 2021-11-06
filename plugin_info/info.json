@@ -1,0 +1,14 @@
+{
+	"id": "Mattermost",
+	"name": "Mattermost",
+	"description": "Plugin permettant la gestion des messages avec Mattermost",
+	"licence": "GNU GPLv2",
+	"author": "Luc Guinchard",
+	"require": "3.0",
+	"category": "communication",
+	"hasDependency": false,
+	"hasOwnDeamon": false,
+	"maxDependancyInstallTime": 0,
+	"changelog": "https://lucguinchard.github.io/plugin-Mattermost/#language#/changelog",
+	"documentation": "https://lucguinchard.github.io/plugin-Mattermost/#language#/"
+}

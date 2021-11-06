@@ -1,0 +1,10 @@
+{
+	"plugins\/Mattermost\/plugin_info\/configuration.php": {
+		"Commande slash": "Commande slash",
+		"Utiliser les commandes slash pour connecter Mattermost à Jeedom. Cela permet d’intéroger Jeedom directement avec Mattermost.": "Utiliser les commandes slash pour connecter Mattermost à Jeedom. Cela permet d’intéroger Jeedom directement avec Mattermost.",
+		"URL de requête à utiliser : ": "URL de requête à utiliser : ",
+		"Jeton": "Jeton",
+		"Bot": "Bot",
+		"Utilisez le bot pour communiquer avec Mattermost." : "Utilisez le bot pour communiquer avec Mattermost."
+	}
+}
