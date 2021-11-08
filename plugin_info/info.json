@@ -9,6 +9,6 @@
 	"hasDependency": false,
 	"hasOwnDeamon": false,
 	"maxDependancyInstallTime": 0,
-	"changelog": "https://lucguinchard.github.io/plugin-Mattermost/#language#/changelog",
-	"documentation": "https://lucguinchard.github.io/plugin-Mattermost/#language#/"
+	"changelog": "https://lucguinchard.github.io/plugin-Mattermost/changelog",
+	"documentation": "https://lucguinchard.github.io/plugin-Mattermost/"
 }

@@ -1,6 +1,7 @@
 site_name: Jeedom - plugin-Mattermost
 site_url: https://lucguinchard.github.io/plugin-Mattermost/
 repo_url: https://github.com/lucguinchard/plugin-Mattermost
+site_author: Luc Guinchard
 #edit_uri: docs/
 
 # Copyright
@@ -40,6 +41,8 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Passer en mode clair
+  logo: https://github.com/lucguinchard/plugin-Mattermost/blob/master/plugin_info/Mattermost_icon.png?raw=true
+  favicon: https://github.com/lucguinchard/plugin-Mattermost/blob/master/plugin_info/Mattermost_icon.png?raw=true
 
 plugins:
   - search
