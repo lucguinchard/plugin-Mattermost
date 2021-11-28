@@ -119,11 +119,11 @@ class Mattermost extends eqLogic {
 		$url = $this->getConfiguration("webhooks");
 		$username = $this->getConfiguration("username");
 		if(!empty($username)) {
-			$username = 'username": "'.$username.'",';
+			$username = '"username": "'.$username.'",';
 		}
 		$channel = $this->getConfiguration("channel");
-		if(!empty($username)) {
-			$channel = 'channel": "'.$channel.'",';
+		if(!empty($channel)) {
+			$channel = '"channel": "'.$channel.'",';
 		}
 		// TODO use /core/img/jeedom_home_Light.png
 		$data = '{
