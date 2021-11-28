@@ -94,10 +94,6 @@ $eqLogicList = eqLogic::byType($plugin->getId());
 					<div class="col-sm-3">
 						<center>
 							<img id="img_device" src="<?= $plugin->getPathImgIcon(); ?>" style="height : 200px;" />
-							<div id="img_device_not_found">
-								<p>{{Pas d’image de votre appareil ?}}</p>
-								<p>{{Proposer une image}} <a href="https://github.com/lucguinchard/plugin-Mattermost/issues/new?assignees=&labels=type%3AEnhancement&template=LOGO_DEVICE_EMPTY.md&title=L%E2%80%99image+de+mon+appareil+%60aaa%60+n%E2%80%99existe+pas." target="_blank">{{ici}}</a>.</p>
-							</div>
 						</center>
 					</div>
 					<div class="col-sm-6">

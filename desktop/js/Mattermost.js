@@ -32,14 +32,6 @@ $('.eqLogicAttr[data-l1key=configuration][data-l2key=model]').on('change', funct
 	} else {
 		url = 'plugins/Mattermost/core/img/' + $(this).value() + '.png';
 	}
-	$('#img_device_not_found a').attr('href', 'https://github.com/lucguinchard/plugin-Mattermost/issues/new?assignees=&labels=type%3AEnhancement&template=LOGO_DEVICE_EMPTY.md&title=L%E2%80%99image+de+mon+appareil+%60' + $(this).value() + '%60+n%E2%80%99existe+pas.');
-	$.get(url, function(data){
-		$('#img_device').attr('src', url);
-		$('#img_device_not_found').css('display', 'none');
-	}).fail(function() {
-		$('#img_device').attr('src', '/plugins/Mattermost/plugin_info/Mattermost_icon.png');
-		$('#img_device_not_found').css('display', 'block');
-	});
 });
 
 /*
