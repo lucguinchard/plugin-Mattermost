@@ -49,6 +49,13 @@ if (!isConnect()) {
 					<input type="text" class="configKey form-control" data-l1key="bot.token" value=""/>
 				</div>
 			</div>
+			<br/>
+			<h3><i class="fas fa-coffee"></i> {{Offrez-un café}}</h3>
+			<div class="form-group">
+				<div>
+					{{Ce plugin est entièrement gratuit et indépendant, Mais si cela vous enchante j’accepte les}} <a href="https://www.paypal.com/paypalme/lucguinchard" title="{{thé/café/bière}}" target="_blank"><i class="fas fa-coffee"></i></a>.
+				</div>
+			</div>
 		</div>
 	</fieldset>
 	<br/>

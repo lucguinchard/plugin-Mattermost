@@ -5,6 +5,9 @@
 		"URL de requête à utiliser : ": "Request URL to use: ",
 		"Jeton": "Token",
 		"Bot": "Bot",
-		"Utilisez le bot pour communiquer avec Mattermost." : "Use the bot to communicate with Mattermost."
+		"Utilisez le bot pour communiquer avec Mattermost." : "Use the bot to communicate with Mattermost.",
+		"Offrez-un café": "Offer a coffee",
+		"Ce plugin est entièrement gratuit et indépendant, Mais si cela vous enchante j’accepte les": "This plugin is completely free and independent, But if you like it I accept the",
+		"thé/café/bière": "tea/coffee/beer"
 	}
 }
