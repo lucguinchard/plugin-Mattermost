@@ -76,11 +76,15 @@ class Mattermost extends eqLogic {
 		if ($icon) {
 			$cmd->setDisplay('icon', $icon);
 		}
-		foreach ($configurationList as $key => $value) {
-			$cmd->setConfiguration($key, $value);
+		if($configurationList != null) {
+			foreach ($configurationList as $key => $value) {
+				$cmd->setConfiguration($key, $value);
+			}
 		}
-		foreach ($displayList as $key => $value) {
-			$cmd->setDisplay($key, $value);
+		if($displayList != null) {
+			foreach ($displayList as $key => $value) {
+				$cmd->setDisplay($key, $value);
+			}
 		}
 		$cmd->setEqLogic_id($this->getId());
 		return $cmd;
