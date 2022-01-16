@@ -35,7 +35,7 @@ $eqLogicList = eqLogic::byType($plugin->getId());
 				<br/>
 				<span>{{Configuration}}</span>
 			</div>
-			<div class="cursor eqLogicAction" data-action="add">
+			<div class="cursor eqLogicAction logoSecondary" data-action="add">
 				<i class="fas fa-plus-circle"></i>
 				<br/>
 				<span>{{Ajouter}}</span>
@@ -47,15 +47,21 @@ $eqLogicList = eqLogic::byType($plugin->getId());
 				<span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n’avez pas encore d’appareil, cliquez sur configuration et cliquez sur synchroniser pour commencer}}</span>
 			</center>
 		<?php } else { ?>
-			<input class="form-control" placeholder="{{Rechercher}}" id="in_searchEqlogic" />
+			<div class="input-group" style="margin:5px;">
+				<input class="form-control roundedLeft" placeholder="{{Rechercher}}" id="in_searchEqlogic" />
+				<div class="input-group-btn">
+					<a id="bt_resetSearch" class="btn" style="width:30px"><i class="fas fa-times"></i></a>
+					<a class="btn roundedRight hidden" id="bt_pluginDisplayAsTable" data-coreSupport="1" data-state="0"><i class="fas fa-grip-lines"></i></a>
+				</div>
+			</div>
 			<div class="eqLogicThumbnailContainer">
 				<?php
 				foreach ($eqLogicList as $eqLogic) {
 					$opacity = ($eqLogic->getIsEnable()) ? '' : 'disableCard'; ?>
 					<div class="eqLogicDisplayCard cursor <?= $opacity ?>" data-eqLogic_id="<?= $eqLogic->getId() ?>">
-					<img src="<?= $eqLogic->getImage() ?>" />
-					<br/>
-					<span class="name"><?= $eqLogic->getHumanName(true, true) ?></span>
+						<img src="<?= $eqLogic->getImage() ?>" />
+						<br/>
+						<span class="name"><?= $eqLogic->getHumanName(true, true) ?></span>
 					</div>
 				<?php } ?>
 			</div>
@@ -63,14 +69,14 @@ $eqLogicList = eqLogic::byType($plugin->getId());
 	</div>
 
 	<div class="col-xs-12 eqLogic" style="display: none;">
-		<a class="btn btn-success eqLogicAction pull-right" data-action="save">
-			<i class="fa fa-check-circle"></i> {{Sauvegarder}}
-		</a>
-		<a class="btn btn-danger eqLogicAction pull-right" data-action="remove">
-			<i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
-		<a class="btn btn-default eqLogicAction pull-right" data-action="configure">
-			<i class="fa fa-cogs"></i> {{Configuration avancée}}
-		</a>
+		<div class="input-group pull-right" style="display:inline-flex">
+			<span class="input-group-btn">
+				<a class="btn btn-sm btn-default eqLogicAction roundedLeft" data-action="configure"><i class="fas fa-cogs"></i><span class="hidden-xs"> {{Configuration avancée}}</span></a>
+				<a class="btn btn-sm btn-default eqLogicAction" data-action="copy"><i class="fas fa-copy"></i><span class="hidden-xs"> {{Dupliquer}}</span></a>
+				<a class="btn btn-sm btn-success eqLogicAction" data-action="save"><i class="fas fa-check-circle"></i> {{Sauvegarder}}</a>
+				<a class="btn btn-sm btn-danger eqLogicAction roundedRight" data-action="remove"><i class="fas fa-minus-circle"></i><span class="hidden-xs"> {{Supprimer}}</span></a>
+			</span>
+		</div>
 		<ul class="nav nav-tabs" role="tablist">
 			<li role="presentation">
 				<a href="#" class="eqLogicAction" aria-controls="home" role="tab" data-toggle="tab"
@@ -168,19 +174,20 @@ $eqLogicList = eqLogic::byType($plugin->getId());
 				</div>
 			</div>
 			<div id="commandtab" role="tabpanel" class="tab-pane">
-				<legend><i class="fa fa-list-alt"></i></i>{{Commande}}</legend>
-				<table id="table_command" class="table table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th>{{Nom}}</th>
-							<th>{{Type}}</th>
-							<th></th>
-							<th>{{Action}}</th>
-						</tr>
-					</thead>
-					<tbody>
-					</tbody>
-				</table>
+				<div class="table-responsive">
+					<table id="table_command" class="table table-bordered table-condensed">
+						<thead>
+							<tr>
+								<th style="width: 200px;">{{Nom}}</th>
+								<th style="width: 200px;">{{Type}}</th>
+								<th></th>
+								<th style="width: 150px;">{{Action}}</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
